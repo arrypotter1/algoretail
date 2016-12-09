@@ -1,8 +1,8 @@
 applications:
 - path: .
-  memory: 256M
+  memory: 264M
   instances: 1
   domain: au-syd.mybluemix.net
   name: algoretail
   host: algoretail
-  disk_quota: 1024M
+  disk_quota: 364M
