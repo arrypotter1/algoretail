@@ -40,7 +40,7 @@ var MapsGoogle = function () {
     var mapPolylines = function () {
         var map = new GMaps({
             div: '#gmap_polylines',
-            lat: -12.043333,
+            lat: -12.041333,
             lng: -77.028333,
             click: function (e) {
                 console.log(e);
@@ -60,9 +60,9 @@ var MapsGoogle = function () {
 
         map.drawPolyline({
             path: path,
-            strokeColor: '#131540',
-            strokeOpacity: 0.6,
-            strokeWeight: 6
+            strokeColor: '#42b0f4',
+            strokeOpacity: 1,
+            strokeWeight: 12
         });
     }
 
@@ -147,10 +147,10 @@ var MapsGoogle = function () {
 
         var polygon = map.drawPolygon({
             paths: path,
-            strokeColor: '#BBD8E9',
+            strokeColor: '#42b0f4',
             strokeOpacity: 1,
-            strokeWeight: 3,
-            fillColor: '#BBD8E9',
+            strokeWeight: 4,
+            fillColor: '#f45042',
             fillOpacity: 0.6
         });
     }
