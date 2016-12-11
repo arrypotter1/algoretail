@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<meta charset="utf-8">
-	<title>algoretail | Landing Page</title>
+	<title>algo.retail | AB Tester </title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
 	<meta name="description" content="">
 	<meta name="author" content="">
@@ -15,6 +15,10 @@
 	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	<!-- DATE RANGE PICKER -->
 	<link rel="stylesheet" type="text/css" href="js/bootstrap-daterangepicker/daterangepicker-bs3.css" />
+	<!-- UNIFORM -->
+	<link rel="stylesheet" type="text/css" href="js/uniform/css/uniform.default.min.css" />
+	<!-- INBOX CSS -->
+	<link rel="stylesheet" href="css/inbox.css">
 	<!-- FONTS -->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
 </head>
@@ -159,6 +163,8 @@
       </header>
       <!--/HEADER -->
 	
+
+	
 	<!-- PAGE -->
 	<section id="page">
 				<!-- SIDEBAR -->
@@ -205,9 +211,7 @@
 								<i class="fa fa-bookmark-o fa-fw"></i> <span class="menu-text">Test Assortments</span>
 								<span class="arrow"></span>
 								</a>
-								<ul class="sub">
-									<li><a class="" href="abtester.html"><span class="sub-menu-text">AB Tester</span></a></li>
-									
+								<ul class="sub">	<li><a class="" href="abtester.html"><span class="sub-menu-text">AB Tester</span></a></li>							
 								</ul>
 							</li>
 						</ul>
@@ -216,25 +220,6 @@
 				</div>
 				<!-- /SIDEBAR -->
 		<div id="main-content">
-			<!-- SAMPLE BOX CONFIGURATION MODAL FORM-->
-			<div class="modal fade" id="box-config" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-				<div class="modal-dialog">
-				  <div class="modal-content">
-					<div class="modal-header">
-					  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					  <h4 class="modal-title">Box Settings</h4>
-					</div>
-					<div class="modal-body">
-					  Here goes box setting content.
-					</div>
-					<div class="modal-footer">
-					  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					  <button type="button" class="btn btn-primary">Save changes</button>
-					</div>
-				  </div>
-				</div>
-			  </div>
-			<!-- /SAMPLE BOX CONFIGURATION MODAL FORM-->
 			<div class="container">
 				<div class="row">
 					<div id="content" class="col-lg-12">
@@ -245,23 +230,22 @@
 									<!-- STYLER -->
 									
 									<!-- /STYLER -->
-									<!-- BREADCRUMBS -->
 								
-									<!-- /BREADCRUMBS -->
 									<div class="clearfix">
-										<h3 class="content-title pull-left">welcome to algo.retail - rethinking algorithmic retail</h3>
+										<h3 class="content-title pull-left">Assortment AB Testing</h3>
 									</div>
-								
+									<div class="description">A/B testing of assortments</div>
+								</div>
 							</div>
 						</div>
 						<!-- /PAGE HEADER -->
-						<!-- PRICING TABLE 1 -->
+						<!-- INBOX -->
 						<div class="row">
 							<div class="col-md-12">
 								<!-- BOX -->
-								<div class="box">
+								<div class="box border">
 									<div class="box-title">
-										<h4><i class="fa fa-bars"></i>What would you like to perform today ?</h4>
+										<h4><i class="fa fa-envelope"></i>Email</h4>
 										<div class="tools">
 											<a href="#box-config" data-toggle="modal" class="config">
 												<i class="fa fa-cog"></i>
@@ -278,78 +262,130 @@
 										</div>
 									</div>
 									<div class="box-body">
-										<ul class="pricing_table row">
-											<li class="price_block col-md-4 col-xs-11">
-												<h3>Stage 1</h3>
-												<div class="price green">
-													<div class="price_figure">
-													<img src="img\landing\customer.jpg" alt="" class="img-responsive">
-														<span class="price_tenure">Determine Your Best Customer</span>
-													</div>
-												</div>
-												<ul class="features">
-													<li>Set Customer Goals</li>
-													<li>Cluster Customers</li>
-													<li>Discover Customer Personas</li>
-													
-												</ul>
-												<div class="footer">
-													<button type="submit" class="btn btn-danger" onclick="window.location='goals.html';return false;">Start here</button>
-												</div>
-											</li>
-											<li class="price_block col-md-4 col-xs-11">
-												<h3>Stage 2</h3>
-												<div class="price green">
-													<div class="price_figure">
-													<img src="img\landing\product_assortment.jpg" alt="" class="img-responsive">
-													
-														<span class="price_tenure">Find your winning assortment</span>
-													</div>
-												</div>
-												<ul class="features">
-													<li>Breath and Depth Visualizer</li>
-													<li>Assortment Performance</li>
-													<li>Demand Transference</li>
-												</ul>
-												<div class="footer">
-													<button type="submit" class="btn btn-danger" onclick="window.location='breathdepthvisualizer.html';return false;">Start here</button>
-												</div>
-											</li> 
-											<li class="price_block col-md-4 col-xs-11">
-												<h3>Stage 3</h3>
-												<div class="price green">
-													<div class="price_figure">
-														<img src="img\landing\test.jpg" alt="" class="img-responsive">
-												<span class="price_tenure">Test and Refine	</span>
-													</div>
-												</div>
-												<ul class="features">
-													<li>A/B Tester</li>
-													<li>Planogram Visualizer (Blippar App)</li>													
-												</ul>
-														<div class="footer">
-													<button type="submit" class="btn btn-danger" onclick="window.location='abtester.html';return false;">Start here</button>
-												</div>
-											</li>
+										<!-- TOP ROW -->
+										<div class="emailHeader row">
+											<div class="emailTitle">
+											  <div class="col-md-2">
+												<img class="img-responsive pull-left" alt="Logo" src="img/logo/logo2.png">
+											  </div>
+											  <div class="col-md-10">
+												  <form class="form-inline hidden-xs" action="index.html">
+													 <div class="input-group input-medium">
+														<input type="text" class="form-control" placeholder="Search Inbox">
+														<span class="input-group-btn">                   
+														<button type="submit" class="btn btn-success"><i class="fa fa-search"></i></button>
+														</span>
+													 </div>
+												  </form>
+											  </div>
+										   </div>
+										</div>
+										<!-- /TOP ROW -->
+										<hr>
+										<!-- INBOX -->
+										<div class="row email">
+											<div id="list-toggle" class="col-md-2">
+											<ul class="list-unstyled">
+												<li class="composeBtn">
+													 <a href="javascript:;" data-title="Compose" class="btn btn-danger"> 
+														Compose
+													 </a>
+												 </li>
+											</ul>
+											   <ul class="emailNav nav nav-pills nav-stacked margin-bottom-10">									
+												  <li class="inbox active" >
+													 <a href="javascript:;" data-title="Inbox">
+														<i class="fa fa-inbox fa-fw"></i> Inbox (2)
+													 </a>
+												  </li>
+												  <li class="starred">
+													<a href="javascript:;" data-title="Starred">
+														<i class="fa fa-star fa-fw"></i> Starred
+													</a>
+												  </li>
+												  <li class="sent">
+													  <a href="javascript:;"  data-title="Sent">
+														<i class="fa fa-mail-forward fa-fw"></i> Sent Items
+													  </a>
+												  </li>
+												  <li class="draft">
+													<a href="javascript:;" data-title="Draft">
+														<i class="fa fa-files-o fa-fw"></i> Drafts
+													</a>
+												  </li>
+												  <li class="spam">
+													<a href="javascript:;" data-title="Spam">
+														<i class="fa fa-ban fa-fw"></i> Spam
+													</a>
+												  </li>
+												  <li class="trash">
+													<a href="javascript:;" data-title="Trash">
+														<i class="fa fa-trash-o fa-fw"></i> Trash
+													</a>
+												  </li>
+											   </ul>
+											</div>
+											<div class="col-md-10">
+											
+											   <div class="box border blue">
+									<div class="box-title">
+										<h4><i class="fa fa-dot-circle-o"></i>Email Body</h4>
+										<div class="tools">
+											<a href="#box-config" data-toggle="modal" class="config">
+												<i class="fa fa-cog"></i>
+											</a>
+											<a href="javascript:;" class="reload">
+												<i class="fa fa-refresh"></i>
+											</a>
+											<a href="javascript:;" class="collapse">
+												<i class="fa fa-chevron-up"></i>
+											</a>
+											<a href="javascript:;" class="remove">
+												<i class="fa fa-times"></i>
+											</a>
+										</div>
+									</div>
+									<div class="box-body big">
+										<div class="jumbotron">
 										
-										</ul>
+										  <h1>Hello, world!</h1>
+										  <p>We have introduced a brand new water, would you like to try out product</p>
+										  <div class="col-md-2" align="center"> <img src="img/assortment/test.jpg"  alt="" class="img-responsive" /> </div>
+										  </br> </br> </br>
+										  <p><a class="btn btn-primary btn-lg" role="button">Learn more</a></p>
+										</div>
+									</div>
+								</div>
+											   
+											   
+											</div>
+										</div>
+										<!-- /INBOX -->
 										
+									</div>
+								</div>
+								<!-- /BOX -->
 								
 							</div>
 						</div>
-						<!-- /PRICING TABLE 1 -->
-						<div class="separator"></div>
-
-					<div class="footer-tools">
+						<!-- /INBOX -->
+						<div class="footer-tools">
 							<span class="go-top">
 								<i class="fa fa-chevron-up"></i> Top
 							</span>
 						</div>
 					</div><!-- /CONTENT-->
+					 <div class="box-body center">
+					  <button type="submit" class="btn btn-primary">Save</button>
+				 <button type="submit" class="btn btn-purple" onclick="window.location='landingpg.html';return false;">Next Page</button>
+				 </div>
+         </div>
+		 </br></br></br>
 				</div>
 			</div>
 		</div>
 	</section>
+	 
 	<!--/PAGE -->
 	<!-- JAVASCRIPTS -->
 	<!-- Placed at the end of the document so the pages load faster -->
@@ -359,24 +395,30 @@
 	<script src="js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js"></script>
 	<!-- BOOTSTRAP -->
 	<script src="bootstrap-dist/js/bootstrap.min.js"></script>
-	
-		
+	<!-- LESS CSS -->
+	<script src="js/lesscss/less-1.4.1.min.js" type="text/javascript"></script>	
 	<!-- DATE RANGE PICKER -->
 	<script src="js/bootstrap-daterangepicker/moment.min.js"></script>
-	
 	<script src="js/bootstrap-daterangepicker/daterangepicker.min.js"></script>
 	<!-- SLIMSCROLL -->
 	<script type="text/javascript" src="js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script><script type="text/javascript" src="js/jQuery-slimScroll-1.3.0/slimScrollHorizontal.min.js"></script>
 	<!-- BLOCK UI -->
 	<script type="text/javascript" src="js/jQuery-BlockUI/jquery.blockUI.min.js"></script>
+	<!-- UNIFORM -->
+	<script type="text/javascript" src="js/uniform/jquery.uniform.min.js"></script>
+	<!-- BOOTSTRAP WYSIWYG -->
+	<script type="text/javascript" src="js/bootstrap-wysiwyg/jquery.hotkeys.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap-wysiwyg/bootstrap-wysiwyg.min.js"></script>
 	<!-- COOKIE -->
 	<script type="text/javascript" src="js/jQuery-Cookie/jquery.cookie.min.js"></script>
 	<!-- CUSTOM SCRIPT -->
 	<script src="js/script.js"></script>
+	<script src="js/inbox.js"></script>
 	<script>
 		jQuery(document).ready(function() {		
-			App.setPage("pricing");  //Set current page
+			App.setPage("inbox");  //Set current page
 			App.init(); //Initialise plugins and elements
+			Inbox.init();
 		});
 	</script>
 	<!-- /JAVASCRIPTS -->
